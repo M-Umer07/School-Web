@@ -26,11 +26,11 @@ const newsletterForm = document.getElementById("newsletterForm");
 
 if (newsletterForm) {
   newsletterForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop the page from refreshing
+    e.preventDefault(); 
     const messageBox = document.getElementById("newsletterMessage");
     messageBox.textContent = "Thank you for subscribing!";
     messageBox.classList.remove("d-none");
-    newsletterForm.reset(); // clear the input box
+    newsletterForm.reset();
   });
 }
 
@@ -56,7 +56,7 @@ const admissionForm = document.getElementById("admissionForm");
 
 if (admissionForm) {
   admissionForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop real submission (no backend yet)
+    e.preventDefault(); 
 
     const studentName = document.getElementById("studentName").value.trim();
     const errorBox = document.getElementById("admissionError");

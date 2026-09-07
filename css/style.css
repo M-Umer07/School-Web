@@ -42,6 +42,16 @@ h1, h2, h3, .brand-font {
   color: #ffffff;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+  line-height: 1.3;
+}
+
+.navbar-school .navbar-brand small {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #d8ddea;
 }
 
 .hero-banner {
@@ -201,6 +211,8 @@ h1, h2, h3, .brand-font {
 
 #heroSlider .carousel-item img {
   height: clamp(300px, 60vh, 640px);
+  object-fit: contain;
+  background-color: var(--color-navy);
 }
 
 #heroSlider .carousel-caption {
@@ -209,7 +221,7 @@ h1, h2, h3, .brand-font {
 
 img.img-fluid.rounded {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
